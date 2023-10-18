@@ -1,23 +1,117 @@
-.gallary{
+* {
+    margin: 0;
+    padding: 0;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+.about-video {
+    width: 480px;
+}
+
+.about-info {
+    width: 580px;
+}
+.about-info h3 {
+    color: #F2BE22;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+.about-info h2 {
+    color: #18121E;
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+.about-btn a {
+    color: #FDFDFD;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1A3E3E;
+    padding: 16px 36px;
+    text-decoration: none;
+}
+.about-btn {
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+.about {
     width: 1180px;
-    margin: 0 auto;
+    margin: 80px auto;
+}
+
+.popular {
+    width: 1180px;
+    margin: 80px auto;
     text-align: center;
 }
-.gallary-title p{
+.popular-title {
+    margin-bottom: 50px;
+}
+.popular-title p {
     color: #F2BE22;
     font-family: Nunito Sans;
     font-size: 24px;
 }
-.gallary-title h2{
+.popular-title h2 {
+    font-family: Nunito Sans;
+    font-size: 32px;
+    color: #18121E;
+    font-size: 32px;
+    font-weight: 800;
+}
+.popular-items {
+    display: flex;
+    justify-content: space-between;
+}
+.popular-items img {
+    width: 32%;
+    transform: scale(1);
+    transform:  0.5s ease;
+}
+.popular-items img:hover {
+    transform: scale(1.1);
+}
+.popular-btn a{
+    background-color: #1A3E3E;
+    padding: 16px 36px;
+    color: #FDFDFD;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transform:  2s ease;
+}
+.popular-btn a:hover {
+    background-color: rgb(229, 147, 147);
+}
+.gallary {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+.gallary-title p {
+    color: #F2BE22;
+    font-family: Nunito Sans;
+    font-size: 24px;
+}
+.gallary-title h2 {
     color: #18121E;
     font-family: Nunito Sans;
     font-size: 32px;
     font-weight: 800;
 }
-.gallary-btn{
+.gallary-btn, .popular-btn{
     margin-top: 50px;
 }
-.gallary-btn a{
+.gallary-btn a {
     color: #FDFDFD; 
     font-family: Nunito Sans;
     font-size: 16px;
@@ -26,4 +120,10 @@
     padding: 16px 36px;
     text-decoration: none;
     border-radius: 4px;
+    transform: 0.5s ease;
+}
+.gallary-btn a:hover {
+    color:#18121E;
+    background-color:#fff;
+    border: 1px solid #18121E;
 }
