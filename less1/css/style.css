@@ -1,0 +1,29 @@
+.gallary{
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+}
+.gallary-title p{
+    color: #F2BE22;
+    font-family: Nunito Sans;
+    font-size: 24px;
+}
+.gallary-title h2{
+    color: #18121E;
+    font-family: Nunito Sans;
+    font-size: 32px;
+    font-weight: 800;
+}
+.gallary-btn{
+    margin-top: 50px;
+}
+.gallary-btn a{
+    color: #FDFDFD; 
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #1A3E3E;
+    padding: 16px 36px;
+    text-decoration: none;
+    border-radius: 4px;
+}
