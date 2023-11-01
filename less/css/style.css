@@ -206,6 +206,7 @@
 .blog-item {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .blog-items {
@@ -228,14 +229,15 @@
 .blog-item-info h3 {
     margin-bottom: 24px;
 }
-
-.blog-item-foto img {
-    height: 280px;
-}
 .blog-item-info p {
     height: 120px;
     margin-bottom: 24px;
 }
+
+.blog-item-foto img {
+    height: 280px;
+}
+
 
 .button_info {
     display: flex;
