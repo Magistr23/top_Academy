@@ -247,7 +247,7 @@ border-spacing: 0;
 }
 
 .info-img {
-    width: 925px;
+    width: 930px;
 }
 
 .ofer-item {
@@ -385,7 +385,10 @@ border-spacing: 0;
 
 .blog-item-info {
     width: 250px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* position: relative; */
 }
 
 .blog-item-info h3 {
@@ -405,7 +408,7 @@ border-spacing: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
 }
 
