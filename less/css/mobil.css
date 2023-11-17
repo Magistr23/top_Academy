@@ -1,27 +1,260 @@
 @media only screen and (max-width: 1024px) {
- 
- 
+    .header {
+        width: 94%;
+    }
+    .header-menu ul li {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .header-order input {
+        width: 200px;
+    }
+
+    .about {
+        width: 94%;
+    }
+
+    .about-video iframe{
+        height: 245px;
+    }
+    
+    .ofer {
+        width: 94%;
+    }
+      .ofer-info-items {
+        margin-top: 20px;
+    }
+      .ofer-item {
+        margin-bottom: 10px;
+    }
+    .ofer-info-top p {
+        display: none;
+    }
 }
- 
- 
+
 @media only screen and (max-width: 768px) {
-   
- 
+    .header-btn {
+        display: none;
+    }
+    .header-logo img{
+        width: 100px;
+    }
+    .header-offer {
+        margin-top: 140px;
+    }
+    .header-offer h1 {
+        font-size: 44px;
+    }
+
+    .header-form input {
+        width: 40%;
+        margin-bottom: 10px;
+    }
+    .header-form button{
+        width: 40%;
+    }
+    .about-video iframe {
+        height: 184px;
+    }
+    .about-info p {
+        display: none;
+    }
+    .ofer-info {
+        width: 50%;
+    } 
+     .ofer-img {
+        width: 45%;
+        padding-top: 40px;
+    }
+    .ofer-img img {
+        width: 46%;
+        padding: 5px;
+    }
+
+    .blog {
+        width: 94%;
+    }
+    .blog-item-foto {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
  
  
 @media only screen and (max-width: 425px) {
-   
- 
+    .mob-btn {
+        display: block;
+    }
+    .header-menu {
+        display: none;
+   }
+   .header-offer {
+        margin-top: 140px;
+    }
+
+   .header-offer h1 {
+        font-size: 28px;
+    }
+    .header-form input {
+        width: 100%;
+    }
+    .header-form button{
+        width: 90%;
+    }
+    .about {
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .about-info {
+        margin-bottom: 40px;
+    }
+    .about-video, .about-info {
+        width: 100%;
+    }
+
+    .about-video iframe {
+        height: 230px;
+    }
+    .about-info p {
+        display: block;
+    }
+    .about-btn {
+        text-align: center;
+    }
+
+
 }
- 
- 
+
+@media only screen and (max-width: 768px) {
+    .header-btn{
+        display: none;
+    }
+    .header-logo img{
+        width: 100px;
+    }
+    .header-offer {
+        margin-top: 286px;
+    }
+    .header-offer h1 {
+        font-size: 44px;
+    }
+
+    .header-order input {
+        width: 42%;
+        margin-bottom: 10px;
+    }
+    .header-order button {
+        width: 42%;
+    }
+    .header-form form {
+        flex-wrap: wrap;
+    }
+
+    .about-video iframe{
+        height: 184px;
+    }
+    .about-info p {
+      display: none;
+    }
+
+    .ofer{
+        flex-wrap: wrap;
+    }
+    .ofer-info, .ofer-img{
+        width: 100%;
+    }
+    .ofer-info-top p {
+        display: block;
+    }
+    .ofer-img{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ofer-img img{
+        width: 25%;
+    }
+}
+
+
+@media only screen and (max-width: 425px) {
+    .mob-btn{
+        display: block;
+    }
+    
+    .header-menu{
+        display: none;
+    }
+    .header-offer {
+        margin-top: 140px;
+    }
+    .header-offer h1 {
+        font-size: 28px;
+    }
+    .header-order input {
+        width: 100%;
+    }
+    .header-order button {
+        width: 100%;
+    }
+    .about{
+        flex-direction: column-reverse;
+        margin-top: 40px;
+    }
+    .about-video, .about-info{
+        width: 100%;
+    }
+    .about-info{
+        margin-bottom: 60px;
+    }
+
+    .about-video iframe {
+        height: 230px;
+    }
+    .about-info p {
+        display: block;
+      }
+      .about-btn{
+        text-align: center;
+      }
+
+      .ofer-img{
+        display: none;
+      }
+      .ofer-info-btn{
+        text-align: center;
+      }
+      .ofer-fon {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+
 @media only screen and (max-width: 375px) {
-   
- 
+    .header-offer {
+        margin-top: 24px;
+    }
+    .header-offer h1 {
+        font-size: 20px;
+    }
+    .blog-item {
+        flex-direction: column;
+    }
+
+    .blog-items {
+        width: 100%;
+    }
+
 }
- 
+
 @media only screen and (max-width: 320px) {
-   
- 
+    .header-offer {
+        margin-top: 20px;
+    }
+    .header-offer h1 {
+        font-size: 20px;
+    }
+    .mob-btn {
+        display: block;
+    }
 }
