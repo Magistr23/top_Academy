@@ -54,6 +54,9 @@
     .form-input input {
         margin-bottom: 10px;
     }
+    .directions {
+        width: 94%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -107,6 +110,9 @@
     .blog-item-info{
         width: 100%;
         padding-top: 20px;
+    }
+    .directions__items {
+        width: 45%;
     }
 }
  
@@ -188,7 +194,13 @@
         flex-wrap: wrap;
         padding: 25px 10px;
     }
-
+    .directions__items {
+        width: 90%;
+        height: 295px;
+    }
+    .directions__items {
+        height: 295px;
+    }
 }
 @media only screen and (max-width: 375px) {
     .header-offer {
