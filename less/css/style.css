@@ -29,7 +29,7 @@ display: block;
 }
 body {
 line-height: 1;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
+/* font-family: 'Roboto', sans-serif; */
 }
 ol, ul {
 list-style: none;
@@ -47,7 +47,13 @@ border-collapse: collapse;
 border-spacing: 0;
 }
 
-
+@font-face {
+    font-family: NunitoSans-Regular;
+    src: url(../fonts/NunitoSans-Regular.ttf) format("truetype");
+}
+body {
+    font-family: NunitoSans-Regular, Arial, Helvetica, sans-serif;
+}
 .mob-btn {
     position: absolute;
     z-index: 700;
@@ -77,7 +83,7 @@ border-spacing: 0;
 }
 .mob-menu ul li a {
     color: #FDFDFD;
-    font-family: Nunito Sans;
+    /*   */
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -119,7 +125,7 @@ border-spacing: 0;
 }
 .header-menu ul li a {
     color: #FDFDFD;
-    font-family: Nunito Sans;
+    /*   */
     font-size: 18px;
     font-weight: 600;
     text-decoration: none;
@@ -135,7 +141,7 @@ border-spacing: 0;
     border-radius: 4px;
     background: #1A3E3E;
     color: #FDFDFD;
-    font-family: Nunito Sans;
+    /*   */
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -155,7 +161,7 @@ border-spacing: 0;
 
 .header-offer h1{
     color: #FDFDFD;
-    font-family: NEXT ART;
+    /* font-family: NEXT ART; */
     font-size: 50px;
     font-weight: 700;
     line-height: 150%; /* 75px */
@@ -180,14 +186,14 @@ border-spacing: 0;
     width: 270px;
     background-color: transparent;
     color: #FDFDFD;
-    font-family: Nunito Sans;
+    /*   */
     font-size: 16px;
     font-weight: 700;
     line-height: 150%; /* 24px */
 }
 .header-form input::placeholder {
     color: #FDFDFD;
-    font-family: Nunito Sans;
+    /*   */
     font-size: 16px;
     font-weight: 700;
     line-height: 150%; /* 24px */
@@ -198,7 +204,7 @@ border-spacing: 0;
     border-radius: 4px;
     background: #FDFDFD;
     color: #1A3E3E;
-    font-family: Nunito Sans;
+    /*   */
     font-size: 16px;
     font-weight: 700;
     line-height: 20px; /* 125% */
@@ -223,14 +229,14 @@ border-spacing: 0;
 }
 .about-info h3 {
     color: #F2BE22;
-    font-family: Nunito Sans;
+     
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 8px;
 }
 .about-info h2 {
     color: #18121E;
-    font-family: Nunito Sans;
+
     font-size: 32px;
     font-weight: 800;
     margin-bottom: 40px;
@@ -242,7 +248,7 @@ border-spacing: 0;
 }
 .about-btn a {
     color: #FDFDFD;
-    font-family: Nunito Sans;
+      
     font-size: 16px;
     font-weight: 600;
     background: #1A3E3E;
@@ -271,19 +277,17 @@ border-spacing: 0;
 
 .ofer-info-top h3{
     color: #F2BE22;
-    font-family: Nunito Sans;
     font-size: 24px;
 }
 
 .ofer-info-top h2{
     color: #18121E;
-    font-family: Nunito Sans;
     font-size: 32px;
     font-weight: 800;
 }
 .ofer-info-top p{
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
@@ -302,7 +306,7 @@ border-spacing: 0;
 
 .ofer-item-info h4{
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 18px;
     font-weight: 700;
     line-height: 20px; 
@@ -310,7 +314,7 @@ border-spacing: 0;
 }
 .ofer-item-info p{
     color: #000;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
@@ -324,7 +328,7 @@ border-spacing: 0;
     border: 1px solid #1A3E3E;
     background: #1A3E3E;
     color: #FDFDFD;
-    font-family: Nunito Sans;
+     
     font-size: 16px;
     font-weight: 600;
     padding: 16px 36px;
@@ -461,12 +465,12 @@ border-spacing: 0;
 
 .popular-title p {
     color: #F2BE22;
-    font-family: Nunito Sans;
+     
     font-size: 24px;
 }
 
 .popular-title h2 {
-    font-family: Nunito Sans;
+     
     font-size: 32px;
     color: #18121E;
     font-size: 32px;
@@ -496,7 +500,7 @@ border-spacing: 0;
     background-color: #1A3E3E;
     padding: 16px 36px;
     color: #FDFDFD;
-    font-family: Nunito Sans;
+     
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -658,7 +662,7 @@ border-spacing: 0;
  
 .button_info .date {
     color: #F2BE22;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 700;
     line-height: 20px; /* 142.857% */
@@ -666,7 +670,7 @@ border-spacing: 0;
  
 .read a {
     color: #1A3E3E;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 700;
     line-height: 20px; /* 142.857% */
@@ -675,7 +679,7 @@ border-spacing: 0;
  
 .blog-item h3 {
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 24px;
     font-weight: 700;
     line-height: 32px; /* 133.333% */
@@ -685,7 +689,7 @@ border-spacing: 0;
  
 .blog-item p {
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 400;
     line-height: 20px; /* 142.857% */
@@ -698,7 +702,7 @@ border-spacing: 0;
  
 .blog-title p {
     color: #F2BE22;
-    font-family: Nunito Sans;
+     
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 8px;
@@ -709,7 +713,7 @@ border-spacing: 0;
     color: #18121E;
     position: relative;
     text-align: center;
-    font-family: Nunito Sans;
+     
     font-size: 32px;
     font-weight: 800;
     line-height: 120%; /* 38.4px */
@@ -734,7 +738,7 @@ border-spacing: 0;
 }
 .blog-btn a {
     color: #FDFDFD;
-    font-family: Nunito Sans;
+     
     font-size: 16px;
     font-weight: 600;
     background: #1A3E3E;
@@ -755,13 +759,13 @@ border-spacing: 0;
 
 .gallary-title p {
     color: #F2BE22;
-    font-family: Nunito Sans;
+     
     font-size: 24px;
 }
 
 .gallary-title h2 {
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 32px;
     font-weight: 800;
 }
@@ -772,7 +776,7 @@ border-spacing: 0;
 
 .gallary-btn a {
     color: #FDFDFD; 
-    font-family: Nunito Sans;
+     
     font-size: 16px;
     font-weight: 600;
     background-color: #1A3E3E;
@@ -807,7 +811,7 @@ border-spacing: 0;
 }
 .bottom-title h3 {
     color: #F2BE22;
-    font-family: Nunito Sans;
+     
     font-size: 18px;
     font-weight: 400;
     line-height: 20px; /* 111.111% */
@@ -815,7 +819,7 @@ border-spacing: 0;
 
 .bottom-title p {
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 26px;
     font-weight: 800;
     line-height: 120%; /* 31.2px */
@@ -843,7 +847,7 @@ border-spacing: 0;
 }
 .price-trip-title h2{
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 26px;
     font-weight: 800;
     line-height: 120%; /* 31.2px */
@@ -888,7 +892,7 @@ tr:last-child {
     background: #1A3E3E;
     padding: 12px 24px;
     color: #FDFDFD;
-    font-family: Nunito Sans;
+     
     font-size: 16px;
     font-weight: 600;
     line-height: 20px; /* 125% */
@@ -898,7 +902,7 @@ tr:last-child {
 
 .form-input p {
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 600;
     line-height: 18px; /* 128.571% */
@@ -906,7 +910,7 @@ tr:last-child {
 
 .form-title p a {
     color: #18121E;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 600;
     line-height: 18px;
@@ -935,7 +939,7 @@ tr:last-child {
 
 .footer-info h2 {
     color: #F3F5F4;
-    font-family: Nunito Sans;
+     
     font-size: 20px;
     font-weight: 700;
     line-height: 24px; /* 120% */
@@ -944,7 +948,7 @@ tr:last-child {
 
 .footer-info p {
     color: var(--white-color-100, #FFF);
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 400;
     line-height: 20px; /* 142.857% */  
@@ -958,7 +962,7 @@ tr:last-child {
 
 .footer-tel-email p a{
     color: #FFF;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 600;
     line-height: 18px; /* 128.571% */
@@ -978,7 +982,7 @@ tr:last-child {
 
 .footer-menu-item h2 {
     color: #F3F5F4;
-    font-family: Nunito Sans;
+     
     font-size: 20px;
     font-weight: 700;
     line-height: 24px; /* 120% */
@@ -991,7 +995,7 @@ tr:last-child {
 
 .footer-menu-item li a{
     color: #FDFDFD;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1018,7 +1022,7 @@ tr:last-child {
 }
 .politics-line-left {
     color: #FFF;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 600;
     line-height: 18px; /* 128.571% */
@@ -1026,7 +1030,7 @@ tr:last-child {
 
 .politics-line-right a {
     color: #FFF;
-    font-family: Nunito Sans;
+     
     font-size: 14px;
     font-weight: 600;
     line-height: 18px; /* 128.571% */
