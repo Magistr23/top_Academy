@@ -57,6 +57,22 @@
     .directions {
         width: 94%;
     }
+
+    .footer {
+        width: 94%;
+    }
+    .footer-menu {
+        width: 500px;
+    }
+    .politics-line {
+        width: 94%;
+    }
+    .price-trip {
+        width: 94%;
+    }
+    .foto {
+        width: 94%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -114,6 +130,16 @@
     .directions__items {
         width: 45%;
     }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer-info, .footer-menu {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer-tel-email {
+        margin: 20px 0;
+    }
 }
  
  
@@ -123,8 +149,8 @@
     }
     .header-menu {
         display: none;
-   }
-   .header-offer {
+    }
+    .header-offer {
         margin-top: 140px;
     }
 
@@ -162,13 +188,13 @@
     }
     .ofer-img{
         display: none;
-      }
-      .ofer-info-btn{
-        text-align: center;
-      }
-      .ofer-fon{
-        padding-top: 50px;
-        padding-bottom: 50px;
+    }
+    .ofer-info-btn{
+    text-align: center;
+    }
+    .ofer-fon{
+    padding-top: 50px;
+    padding-bottom: 50px;
     }
 
     .blog{
@@ -200,6 +226,31 @@
     }
     .directions__items {
         height: 295px;
+    }
+    .footer-info, .footer-menu {
+        width: 100%;
+    }
+    .footer-wraper {
+        padding-top: 50px;
+    }
+    .footer-menu {
+        display: block;
+    }
+    .footer-menu-item {
+        margin-bottom: 50px;
+    }
+    .footer-wraper {
+        padding-bottom: 10px;
+    }
+    .politics-line {
+        display: block;
+        text-align: center;
+    }
+    .politics-line-left {
+        margin-bottom: 10px;
+    }
+    .price-trip {
+        display: none;
     }
 }
 @media only screen and (max-width: 375px) {

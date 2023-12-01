@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Экскурсии в Краснодаре</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>Экскурсии в Краснодаре</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendors/slick/slick.css">
+  <link rel="stylesheet" href="vendors/slick/slick-theme.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mobil.css">
 </head>
@@ -323,6 +325,34 @@
     <a href="#">Наш pinterest</a>
   </div>
 </div>
+<div class="foto">
+  <div class="foto-items">
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+    <div class="foto-item">
+      <img src="img/foto.jpg" alt="">
+    </div>
+  </div>
+</div>
   <div class="bottom">
     <div class="bottom-items">
       <div class="bottom-item-info">
@@ -343,6 +373,76 @@
           </form>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="price-trip">
+    <div class="price-trip-title">
+      <h2>Стоимость наших путешествий</h2>
+    </div>
+    <div class="price-trip-table">
+      <table>
+        <!-- <tr class="table-fon">
+          <td>Наименование</td>
+          <td>Продолжительность</td>
+          <td>Цены</td>
+          <td>Условия</td>
+        </tr> -->
+        <tr>
+          <th>Наименование</th>
+          <th>Продолжительность</th>
+          <th>Цены</th>
+          <th>Условия</th>
+        </tr>
+        <tr>
+          <td>Лаго-Наки</td>
+          <td>7 дней</td>
+          <td>38.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+        <tr>
+          <td>Гуамское ущелье</td>
+          <td>12 дней</td>
+          <td>62.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+        <tr>
+          <td>Лаго-Наки</td>
+          <td>7 дней</td>
+          <td>38.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+        <tr>
+          <td>Гуамское ущелье</td>
+          <td>12 дней</td>
+          <td>62.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+        <tr>
+          <td>Лаго-Наки</td>
+          <td>7 дней</td>
+          <td>38.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+        <tr>
+          <td>Гуамское ущелье</td>
+          <td>12 дней</td>
+          <td>62.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+        <tr>
+          <td>Лаго-Наки</td>
+          <td>7 дней</td>
+          <td>38.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+        <tr>
+          <td>Гуамское ущелье</td>
+          <td>12 дней</td>
+          <td>62.000 руб</td>
+          <td>Для современного мира базовый вектор развития предполагает.</td>
+        </tr>
+      </table>
     </div>
   </div>
   <div class="footer-wraper">
@@ -381,8 +481,7 @@
             <li><img src="img/Group.png"><a href="#">Зимние походы в горы</a></li>
             <li><img src="img/Group.png"><a href="#">Посещение храмов в горах</a></li>
             <li><img src="img/Group.png"><a href="#">Экстремальные виды туризма</a></li>
-            <li><img src="img/Group.png"><a href="#">Походы в джунглях Амазонии
-              NEW</a></li>
+            <li><img src="img/Group.png"><a href="#">Походы в джунглях Амазонии NEW</a></li>
             <li><img src="img/Group.png"><a href="#">Поездка в Африку</a></li>
           </ul>
         </div>
@@ -399,12 +498,48 @@
       </div>
     </div>
   </div>
-
   <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="vendors/slick/slick.min.js"></script>
     <script src="js/mobile.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
+
+<!--  Карусель с помощью slick
+    1 https://kenwheeler.github.io/slick/
+    2 скачать Download Now и папку slick  скопировать в vendors
+ 
+3 Подключить CSS  в хеде до наших CSS!!!
+<link rel="stylesheet" href="vendors/slick/slick.css">
+<link rel="stylesheet" href="vendors/slick/slick-theme.css">
+ 
+4 Подключить js
+<script src="vendors/slick/slick.min.js"></script>
+и свой js
+5 https://code.jquery.com  отсюда путь подклчения jquery
+берем minified (сжатый код без пробела или любой)
+ 
+Перед закрывающим </body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+ 
+  <script src="vendors/slick/slick.min.js"></script>
+ 
+перед сликом и своим (всегда jquery  первый)
+ 
+6 В папке JS создаем файл main.js  со следующим содержимым
+(function($){
+  
+  
+  
+  
+})(jQuery);
+ 
+и подключаем в HTML
+<script src="js/main.js"></script>
