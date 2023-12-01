@@ -54,6 +54,28 @@
               </div>
             </div>
         </section>
+        <section class="link">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <ul class="nav nav-pills nav-fill">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Активная</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">На много длиннее ссылка</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Ссылка</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">Отключенная</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
     </header>
     <main>
         <section class="slyder">
@@ -88,7 +110,7 @@
         <div class="about">
           <div class="container">
             <div class="row">
-              <div class="col-4">
+              <div class="col-6">
                 <div class="about-video1">
                   <img src="images/video.jpg" alt="">
                 </div>
@@ -124,7 +146,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Заголовок карточки</h5>
                               <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
-                              <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Перейти куда-нибудь</a>
                             </div>
                           </div>
                     </div>
@@ -134,7 +156,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Заголовок карточки</h5>
                               <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
-                              <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Перейти куда-нибудь</a>
                             </div>
                           </div>
                     </div>
@@ -144,7 +166,7 @@
                             <div class="card-body">
                               <h5 class="card-title">Заголовок карточки</h5>
                               <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
-                              <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Перейти куда-нибудь</a>
                             </div>
                           </div>
                     </div>
@@ -191,19 +213,38 @@
             </div>
         </div>
         </section>
+        <section class="content">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                    Переключить ширину сворачиваемого
+                  </button>
+                </p>
+                <div style="min-height: 120px;">
+                  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                    <div class="card card-body" style="width: 300px;">
+                      Это некий заполнитель для горизонтального сворачивания. По умолчанию он скрыт и отображается при срабатывании.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </main>
     <footer>
-
     </footer>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Заголовок модального окна</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
           </div>
           <div class="modal-body">
-            ...
+            <p class="muted">Текст-заполнитель для демонстрации некоторых <a href="#" data-bs-toggle="tooltip" title="подсказок по умолчанию">встроенных ссылок</a> с подсказками. Теперь это просто наполнитель, а не убийца. Контент размещен здесь только для того, чтобы имитировать присутствие <a href="#" data-bs-toggle="tooltip" title="Другая всплывающая подсказка">настоящего текста</a>. И все это только для того, чтобы дать вам представление о том, как будут выглядеть всплывающие подсказки при использовании в реальных ситуациях. Итак, надеюсь, теперь вы увидели, как <a href="#" data-bs-toggle="tooltip" title="Еще одна здесь тоже">эти всплывающие подсказки для ссылок</a> могут работать на практике, после того, как вы используете их на <a href="#" data-bs-toggle="tooltip" title="Последний совет!">своем</a> сайте или проекте.</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
@@ -212,6 +253,6 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
