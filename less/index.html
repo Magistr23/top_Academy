@@ -11,6 +11,47 @@
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> -->
+
+<script>
+  // <option value="sel">Выбрать</option>
+  //       <option value="turkey">Турция</option>
+  //       <option value="italy">Италия</option>
+  //       <option value="spain">Испания</option>
+  //       <option value="Maita">Мальта</option>
+  function calc(tour,count,day,sel,price,gift) {
+    // purseInt(строка) - строка в число
+    var ptour = tour.value;
+    var pCount = count.value;
+    var pDay = day.value;
+    var pPrice = 0;
+    if (ptour == 'turkey') {
+
+      pPrice=3000*pCount*pDay
+
+    } else if (ptour == 'italy') {
+
+      pPrice=5000*pCount*pDay
+
+    } else if (ptour == 'spain') {
+
+      pPrice=4000*pCount*pDay
+
+    } else if (ptour == 'Maita') {
+
+      pPrice=7000*pCount*pDay
+
+    }
+    if(sel.checked == true) {
+    pPrice=pPrice-pPrice/10;
+    }
+    if(pPrice>=200000) {
+    gift.value="Водопад";
+    }
+    // pPrice=3000*pCount*pDay;
+    // price.value ="Привет";
+    price.value =pPrice.toString();//преобразовать в строку
+  }
+</script>
 </head>
 <body>
   
@@ -445,6 +486,25 @@
         </tr>
       </table>
     </div>
+  </div>
+  <div class="calculations">
+    <!-- <form action="calculations.php"> -->
+      <form action="#" name="formatour">
+      Выбирите страну : <select name="tour" id="" onchange="calc(tour,count,day,sel,price,gift)">
+        <option value="sel">Выбрать</option>
+        <option value="turkey">Турция</option>
+        <option value="italy">Италия</option>
+        <option value="spain">Испания</option>
+        <option value="Maita">Мальта</option>
+      </select>
+      Кол-во человек <input class="inp" type="number" name="count" value="1">
+      Кол-во дней <input class="inp" type="number" name="day" value="2">
+      Скидка (10%) <input type="checkbox" name="sel">
+      Подарок <input class="inp" type="text" name="gift" value="Нет">
+      К оплате <input class="inp" type="text" name="price">
+      <!-- <input type="submit" name="turs" value="Расчитать"> -->
+      <input type="button" value="Расчитать" onclick="calc(tour,count,day,sel,price,gift)">
+    </form>
   </div>
   <div class="footer-wraper">
     <div class="footer">
