@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/banket.css">
+    <title>Banket</title>
+    <script>
+        function banket(salat,salat_price,pancakes,pancakes_price,popsicle,popsicle_price,pirog,pirog_price,no_discount,discount,payment) {
+
+            var salat = salat.value;
+            var salatPrice = salat_price.value;
+            var pancakes = pancakes.value;
+            var pancakesPrice = pancakes_price.value;
+            var popsicle = popsicle.value;
+            var popsiclePrice = popsicle_price.value;
+            var pirog = pirog.value;
+            var pirogPrice = pirog_price.value;
+            var sum = 0;
+            var sumDiscount = 0;
+
+            if (salat>0) {
+                salatPrice = salatPrice*salat;
+            } else {
+                salatPrice = 0;
+            }
+            if (pancakes>0) {
+                pancakesPrice = pancakesPrice*pancakes;
+            } else {
+                pancakesPrice = 0;
+            }
+            if (popsicle>0) {
+                popsiclePrice = popsiclePrice*popsicle;
+            } else {
+                popsiclePrice = 0;
+            }
+            if (pirog>0) {
+                pirogPrice = pirogPrice*pirog;
+            } else {
+                pirogPrice = 0;
+            }
+            sum = salatPrice+pancakesPrice+popsiclePrice+pirogPrice;
+            no_discount.value = sum.toString();
+            if (sum>=30000) {
+                discount.value = '10%';
+                sumDiscount = sum-sum/10;
+                payment.value = sumDiscount.toString() + ' руб.';
+            } else {
+                discount.value = 'Нет скидки';
+                payment.value = sum.toString() + ' руб.';
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <section class="banket">
+        <form action="#"  name="formabanket">
+            <div class="banket__items">
+                <div class="banket__item">
+                    <div class="banket__foto">
+                        <div class="foto salat"></div>
+                        <div class="quantity">
+                            <label for="salat">Кол-во: </label>
+                            <input type="number" name="salat" id="salat" min="1" max="20">
+                        </div>
+                    </div>
+                    <div class="banket__description">
+                        <h2>
+                            Салат «Метёлка»
+                        </h2>
+                        <p>
+                            В самом базовом варианте приготовления салат состоит всего из трех основных компонентов: белокочанной капусты, свеклы и моркови.
+                        </p>
+                        <div class="price__input">
+                            <input class="rec" type="text" name="salat_price" value="745" readonly> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="banket__item">
+                    <div class="banket__foto">
+                        <div class="foto pancakes"></div>
+                        <div class="quantity">
+                            <label for="pancakes">Кол-во: </label>
+                            <input type="number" name="pancakes" id="pancakes" min="1" max="20">
+                        </div>
+                    </div>
+                    <div class="banket__description">
+                        <h2>
+                            Пышные оладьи на кефире
+                        </h2>
+                        <p>
+                            Такие румяные, золотистые и нежные на вкус оладьи - отличный вариант завтрака, питательный перекус и замечательное дополнение к домашнему чаепитию. Попробуйте!
+                        </p>
+                        <div class="price__input">
+                            <input class="rec" type="text" name="pancakes_price" value="1479" readonly> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="banket__item">
+                    <div class="banket__foto">
+                        <div class="foto popsicle"></div>
+                        <div class="quantity">
+                            <label for="popsicle">Кол-во: </label>
+                            <input type="number" name="popsicle" id="popsicle" min="1" max="20">
+                        </div>
+                    </div>
+                    <div class="banket__description">
+                        <h2>
+                            Куриное «эскимо» в беконе
+                        </h2>
+                        <p>
+                            Очень интересный рецепт приготовления куриного филе в беконе.
+                        </p>
+                        <div class="price__input">
+                            <input class="rec" type="text" name="popsicle_price" value="1274" readonly> руб.
+                        </div>
+                    </div>
+                </div>
+                <div class="banket__item">
+                    <div class="banket__foto">
+                        <div class="foto pirog"></div>
+                        <div class="quantity">
+                            <label for="pirog">Кол-во: </label>
+                            <input type="number" name="pirog" id="pirog" min="1" max="20">
+                        </div>
+                    </div>
+                    <div class="banket__description">
+                        <h2>
+                            Наливной пирог с капустой
+                        </h2>
+                        <p>
+                            Наливной пирог с капустой готовится просто и быстро. Такие пироги еще носят название - заливные, потому что тесто имеет довольно текучую консистенцию, и оно, в буквальном смысле, выливается на начинку.
+                        </p>
+                        <div class="price__input">
+                            <input class="rec" type="text" name="pirog_price" value="1999" readonly> руб.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <input class="btn" type="reset">
+                <input class="btn" type="button" value="Расчитать" onclick="banket(salat,salat_price,pancakes,pancakes_price,popsicle,popsicle_price,pirog,pirog_price,no_discount,discount,payment)">
+                <div class="calculation">
+                    <label for="no_discount">Цена без скидки:</label>
+                    <input type="text" name="no_discount" id="no_discount" readonly>
+                </div>
+                <div class="calculation">
+                    <label for="discount">Скидка:</label>
+                    <input type="text" name="discount" readonly>
+                </div>
+                <div class="calculation">
+                    <label for="payment">Итого:</label>
+                    <input type="text" name="payment" readonly>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
