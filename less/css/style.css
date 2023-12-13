@@ -453,7 +453,8 @@ body {
     text-decoration: underline;
 }
 
-.popular {
+
+/* .popular {
     width: 1180px;
     margin: 80px auto;
     text-align: center;
@@ -509,8 +510,110 @@ body {
 }
 .popular-btn a:hover {
     background-color: rgb(229, 147, 147);
+} */
+
+.popular {
+    width: 1180px;
+    margin: 0 auto;
+}
+.popular__title p {
+    color: #F2BE22;
+    font-size: 24px;
+    text-align: center;
 }
 
+.popular__title h2 {
+     
+    font-size: 32px;
+    color: #18121E;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+}
+.popular__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.popular__item {
+    position: relative;
+    width: 32%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.popular-foto1 {
+    background: url(../img/popul1.png);
+}
+.popular-foto2 {
+    background: url(../img/popul2.png);
+}
+.popular-foto3 {
+    background: url(../img/popul3.png);
+}
+.popular__info {
+    position: absolute;
+    z-index: 700;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    border-radius: 0px 0px 32px 32px;
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(3px);
+    padding: 20px 32px 41px;
+    display: flex;
+    justify-content: space-between;
+}
+h3.popular__info-head {
+    color: #FDFDFD;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+}
+p.popular__info-txt {
+    color: #FDFDFD;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+}
+.popular__info-price p{
+    padding: 8px 16px;
+    color: #FDFDFD;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 120% */
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.30);
+}
+.popular__rating {
+    display: flex;
+    position: absolute;
+    z-index: 700;
+    top: 50px;
+    right: 0;
+}
+.popular__rating p {
+    padding: 4px 8px;
+    color: #1A3E3E;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 18px; /* 128.571% */
+    border-radius: 4px 0px 0px 4px;
+    background: rgba(253, 253, 253, 0.40);
+    backdrop-filter: blur(2px);
+}
+.popular__rating p {
+    display: flex;
+    align-items: center;
+}
+.popular__rating p span {
+    padding-top: 3px;
+}
 .vlog {
     width: 1180px;
     margin: 0 auto;
@@ -1053,5 +1156,25 @@ tr:last-child {
 .politics-line-right a:hover {
     color: #e77e7e;
     text-decoration-line: underline;
+}
+.soc-fix {
+    width: 32px;
+    position: fixed;
+    z-index: 700;
+    bottom: 300px;
+    right: 5px;
+
+}
+.soc-fix img {
+    width: 32px;
+    height: 32px;
+    background-color: #1A3E3E;
+    padding: 2px;
+}
+.soc-fix img:hover {
+    padding: 5px;
+    background-color: #a3a535;
+    border-radius: 5px;
+    transition: 0.3s ease;
 }
 

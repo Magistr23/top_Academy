@@ -13,11 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> -->
 
 <script>
-  // <option value="sel">Выбрать</option>
-  //       <option value="turkey">Турция</option>
-  //       <option value="italy">Италия</option>
-  //       <option value="spain">Испания</option>
-  //       <option value="Maita">Мальта</option>
+
   function calc(tour,count,day,sel,price,gift) {
     // purseInt(строка) - строка в число
     var ptour = tour.value;
@@ -205,7 +201,7 @@
     </div>
   </div>
 </section>
-  <div class="popular">
+  <!-- <div class="popular">
     <div class="popular-title">
       <p>по версии отдыхающих</p>
       <h2>Популярные направления</h2>
@@ -218,8 +214,70 @@
     <div class="popular-btn">
       <a href="#">Все наши направления</a>
     </div>
-  </div>
-
+  </div> -->
+  <section class="popular">
+    <div class="popular__title">
+      <p>по версии отдыхающих</p>
+      <h2>Популярные направления</h2>
+    </div>
+    <div class="popular__items">
+      <div class="popular__item popular-foto1">
+        <div class="popular__info">
+          <div class="popular__info-title">
+            <h3 class="popular__info-head">Озеро возле гор</h3>
+            <p class="popular__info-txt">романтическое приключение</p>
+          </div>
+          <div class="popular__info-price">
+            <p>480 $</p>
+          </div>
+        </div>
+        <div class="popular__rating">
+          <p>
+            <img src="img/ico-star.png" alt="">
+            <span>4.9</span>
+          </p>
+        </div>
+      </div>
+      <div class="popular__item popular-foto2">
+        <div class="popular__info">
+          <div class="popular__info-title">
+            <h3 class="popular__info-head">Озеро возле гор</h3>
+            <p class="popular__info-txt">романтическое приключение</p>
+          </div>
+          <div class="popular__info-price">
+            <p>480 $</p>
+          </div>
+        </div>
+        <div class="popular__rating">
+          <p>
+            <img src="img/ico-star.png" alt="">
+            <span>4.9</span>
+          </p>
+        </div>
+      </div>
+      <div class="popular__item popular-foto3">
+        <div class="popular__info">
+          <div class="popular__info-title">
+            <h3 class="popular__info-head">Озеро возле гор</h3>
+            <p class="popular__info-txt">романтическое приключение</p>
+          </div>
+          <div class="popular__info-price">
+            <p>480 $</p>
+          </div>
+        </div>
+        <div class="popular__rating">
+          <p>
+            <img src="img/ico-star.png" alt="">
+            <span>4.9</span>
+          </p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="popular__btn">
+      
+    </div>
+  </section>
   <section class="vlog">
     <h2>Блог</h2>
     <div class="vlog__title">
@@ -357,7 +415,8 @@
     </div> 
     <div class="gallary-items">
       <img src="img/Rectangle 20.jpg" alt="">
-      <img src="img/Rectangle 21.jpg" alt="">
+      <img src="img/Rectangle 21.jpg" alt="" name="gal2" onmouseout="gal2.src='img/Rectangle 21.jpg'"
+      onmouseover="gal2.src='img/Rectangle 25.jpg'">
       <img src="img/Rectangle 22.jpg" alt="">
       <img src="img/Rectangle 23.jpg" alt="">
       <img src="img/Rectangle 24.jpg" alt="">
@@ -558,6 +617,11 @@
           <a href="#">Политика обработки персональных данных</a>
       </div>
     </div>
+  </div>
+  <div class="soc-fix">
+    <img src="img/ico skype.png" alt="">
+    <img src="img/ico tel.png" alt="">
+    <img src="img/ico vk.png" alt="">
   </div>
   <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
