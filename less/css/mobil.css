@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1024px) {
+    .container {
+        width: 94%;
+    }
     .header {
         width: 94%;
     }

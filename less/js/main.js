@@ -1,4 +1,4 @@
-$('.foto-items').slick({
+$('.foto__items').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,

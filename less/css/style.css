@@ -54,6 +54,19 @@ border-spacing: 0;
 body {
     font-family: NunitoSans-Regular, Arial, Helvetica, sans-serif;
 }
+
+.container {
+    width: 1180px;
+    margin: 0 auto;
+}
+.container-fix {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+.container-fix-wrap {
+    flex-wrap: wrap;
+}
 .mob-btn {
     position: absolute;
     z-index: 700;
@@ -204,18 +217,15 @@ body {
     border-radius: 4px;
     background: #FDFDFD;
     color: #1A3E3E;
-    /*   */
     font-size: 16px;
     font-weight: 700;
     line-height: 20px; /* 125% */
 }
+
 .about {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 1180px;
-    margin: 80px auto;
+    margin: 80px 0;
 }
+
 .about-video {
     width: 45%;
 }
@@ -856,28 +866,27 @@ p.popular__info-txt {
 
 .gallary {
     width: 1180px;
-    margin: 0 auto;
+    margin: 80px auto;
+}
+.gallary__title {
     text-align: center;
 }
-
-.gallary-title p {
+.gallary__title p {
     color: #F2BE22;
-     
     font-size: 24px;
 }
 
-.gallary-title h2 {
+.gallary__title h2 {
     color: #18121E;
-     
     font-size: 32px;
     font-weight: 800;
 }
 
-.gallary-btn, .popular-btn{
+.gallary__btn, .popular-btn{
     margin-top: 50px;
 }
 
-.gallary-btn a {
+.gallary__btn a {
     color: #FDFDFD; 
      
     font-size: 16px;
@@ -889,7 +898,7 @@ p.popular__info-txt {
     transform: 0.5s ease;
 }
 
-.gallary-btn a:hover {
+.gallary__btn a:hover {
     color:#18121E;
     background-color:#fff;
     border: 1px solid #18121E;
@@ -932,16 +941,16 @@ p.popular__info-txt {
     width: 1180px;
     margin: 0 auto;
 }
-.foto-items {
+.foto__items {
     display: flex;
     justify-content: space-between;
 }
-.foto-item {
+.foto__item {
     width: 23%;
     margin-left: 5px;
     margin-right: 5px;
 }
-.foto-item img {
+.foto__item img {
     width: 100%;
 }
 .price-trip {
@@ -1033,6 +1042,31 @@ tr:last-child {
 }
 .calculations input[type=checkbox] {
     margin-right: 20px;
+}
+
+.game {
+
+}
+.game__items {
+    width: 600px;
+    margin: 0 auto;
+    /* flex-wrap: wrap; */
+}
+.game__item {
+    width: 33%;
+}
+.game__item img {
+    width: 100%;
+}
+.game__title {
+    margin-bottom: 40px;
+}
+.game__title h2 {
+    color: #18121E;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 120%;
+    text-align: center;
 }
 
 .footer-wraper {
