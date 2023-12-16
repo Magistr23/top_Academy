@@ -67,6 +67,52 @@ body {
     display: flex;
     align-items: center;
 }
+.display-none {
+    display: none;
+}
+.display-block {
+    display: block;
+}
+.mob-btn {
+    /* position: absolute;
+    z-index: 700;
+    right: 16px;
+    top: 27px; */
+    display: none;
+}
+.mob-menu {
+    position: fixed;
+    z-index: 700;
+    width: 290px;
+    background: #E1EDE6; 
+    padding: 84px 16px;
+    /* right: 16px; */
+    right: -290px;
+    top: 54px;
+    transition: 0.3s ease;
+}
+.mob-menu.active {
+    right: 16px;
+}
+.mob-menu ul li {
+    padding-bottom: 16px;
+}
+.mob-menu ul li img{
+    padding-right: 10px;
+}
+.mob-menu ul li a {
+    color: #2C2D35;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.mob-menu ul li a:hover {
+    color: #F2BE22;
+    text-decoration: underline;
+}
+
 .header {
     padding: 32px 0;
     background: #E1EDE6;
@@ -105,6 +151,9 @@ body {
 .replicas__description {
     margin-left: 30px;
 }
+.replicas__foto img {
+    width: 100%;
+}
 .button {
     margin-top: 60px;
 }
@@ -126,8 +175,9 @@ body {
     font-weight: 500;
     line-height: 110%; /* 44px */
 }
-.reproductions__filter a {
+.reproductions__filter input {
     margin-left: 10px;
+    border: none;
 }
 .reproductions__btn {
     border-radius: 20px;
@@ -150,6 +200,11 @@ body {
 }
 .reproductions__foto img {
     width: 100%;
+}
+figcaption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 }
 .autor {
     color: #86928B;
@@ -195,7 +250,6 @@ body {
     cursor: pointer;
 }
 .collection {
-    width: 100%;
     background: linear-gradient(-39deg, rgba(255, 255, 255, 0%), rgba(0, 0, 0, 0.6)), url(../img/banner-bottom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -287,6 +341,9 @@ footer {
     background: #E1EDE6;
     padding: 23px 0;
 }
+.footer__info {
+    width: 40%;
+}
 .footer__tel {
     margin-top: 41px;
 }
@@ -304,10 +361,15 @@ footer {
     font-weight: 500;
     line-height: normal;
 }
+.footer__bottom {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 .footer__menu {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
 }
 .footer__menu li a {
     color: #86928B;
