@@ -1043,10 +1043,10 @@ tr:last-child {
 .calculations input[type=checkbox] {
     margin-right: 20px;
 }
-
 .game {
-
+    margin-bottom: 30px;
 }
+
 .game__items {
     width: 600px;
     margin: 0 auto;
@@ -1061,14 +1061,17 @@ tr:last-child {
 .game__title {
     margin-bottom: 40px;
 }
-.game__title h2 {
+.game__title h6 {
     color: #18121E;
     font-size: 26px;
     font-weight: 800;
     line-height: 120%;
     text-align: center;
 }
-
+.game__btn {
+    text-align: center;
+    margin-top: 30px;
+}
 .footer-wraper {
     background: #1A3E3E;
     width: 100%;
