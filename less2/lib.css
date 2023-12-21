@@ -88,7 +88,7 @@ input[type='checkbox'] {
     margin-right: 27px;
 }
 input[type='checkbox']::before {
-    width: 40px;
+    width: 60px;
     height: 20px;
     border-radius: 5px;
     top: -2px;
@@ -99,8 +99,38 @@ input[type='checkbox']::before {
     display: inline-block;
     visibility: visible;
     border: 2px solid #43ae4a;
+    animation-play-state: paused;
 }
-input[type='checkbox']:checked:after {
+input[type='checkbox']:not(:checked)::before {
+    width: 60px;
+    height: 20px;
+    border-radius: 5px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #43ae4a;
+    animation-play-state: paused;
+}
+input[type='checkbox']:checked::after {
+    width: 30px;
+    height: 12px;
+    border-radius: 5px;
+    top: 6px;
+    left: 8px;
+    position: absolute;
+    background-color: #ff0000;
+    content: '';
+    display: inline-block;
+    border: 2px solid #ff0000;
+    animation-play-state: running;
+    animation: tes 1000ms;
+    animation-fill-mode: forwards;
+}
+input[type='checkbox']:not(:checked)::before {
     width: 30px;
     height: 12px;
     border-radius: 5px;
@@ -111,6 +141,25 @@ input[type='checkbox']:checked:after {
     content: '';
     display: inline-block;
     border: 2px solid #43ae4a;
+    animation-play-state: running;
+    animation: untes 1000ms;
+    animation-fill-mode: forwards;
+}
+@keyframes tes {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(20px);
+    }
+}
+@keyframes untes {
+    from {
+        transform: translateX(20px);
+    }
+    to {
+        transform: translateX(0px);
+    }
 }
 textarea {
     width: 400px;
