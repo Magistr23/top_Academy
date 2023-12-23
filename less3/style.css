@@ -22,18 +22,23 @@ img {
 .cat__foto {
     float: right;
 }
-.foto {
+/* .foto {
     min-height: 200px;
     min-width: 300px;
-}
+} */
 .cat1 {
     background: url(../less3/img/cat1.png) no-repeat;
     background-size: cover;
+    min-height: 200px;
+    min-width: 300px;
+
     
 }
 .cat2 {
     background: url(../less3/img/cat2.png) no-repeat;
     background-size: cover;
+    min-height: 200px;
+    min-width: 300px;
     
 }
 figure {
@@ -46,10 +51,13 @@ figure {
 figcaption {
     padding:3px 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
     .cat {
-        width: 100%;
+        width: 94%;
     }
+}
+
+@media screen and (max-width: 800px) {
     .cat__foto {
         float: none;
         display: flex;
