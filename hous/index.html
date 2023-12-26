@@ -57,11 +57,11 @@
             <div class="container">
                 <div class="reproductions__title container-flex">
                     <p>Репродукции</p>
-                    <div class="reproductions__filter flex-center">
-                        <input class="reproductions__btn" type="button" value="Франция" onclick="filterFranc()">
-                        <input class="reproductions__btn" type="button" value="Германия" onclick="filterGerm()">
-                        <input class="reproductions__btn" type="button" value="Англия" onclick="filterAngl()">
-                        <input class="reproductions__btn" type="button" value="Все" onclick="filterFull()">
+                    <div id="myBtnContainer" class="reproductions__filter flex-center">
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('franc')">Франция</button>
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('germ')">Германия</button>
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('angl')">Англия</button>
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('all')">Все</button>
                     </div>
                 </div>
                 <div class="reproductions__items container-flex">

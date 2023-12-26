@@ -39,19 +39,6 @@
     }
 }
 @media only screen and (max-width: 425px) {
-    /* .staff__frame img {
-        bottom: 38px;
-        left: 43px;
-        width: 52%;
-    }
-    .staff__frame {
-        background: url(../img/frame.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 399px;
-        height: 323px;
-        position: relative;
-    } */
     .mob-btn {
         display: block;
     }
@@ -81,6 +68,14 @@
     }
     .reproductions__title {
         flex-wrap: wrap;
+    }
+    .reproductions__btn {
+        border-radius: 20px;
+        background: #D4E8D9;
+        padding: 10px 20px;
+        color: black;
+        border: none;
+        margin-bottom: 5px;
     }
     
 }
