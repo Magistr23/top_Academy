@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.watch {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgb(10, 152, 218);
+    border-radius: 50%;
+    position: relative;
+    }
+.minute {
+    width: 96px;
+    height: 10px;
+    background: rgb(10, 152, 218);
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    animation: watch 7s linear infinite;
+    transform-origin: 1px 5px;
+}
+.hour {
+    width: 50px;
+    height: 10px;
+    background: rgb(218, 10, 10);
+    position: absolute;
+    top: 95px;
+    left: 100px;
+    animation: watch 10s linear infinite;
+    transform-origin: 1px 5px;
+}
+.center {
+    width: 20px;
+    height: 20px;
+    background: rgb(119, 199, 119);
+    border-radius: 50%;
+    position: absolute;
+    top: 90px;
+    left: 92px;
+}
+@keyframes watch {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+.doors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 1000px;
+    margin-top: 50px;
+}
+h1 {
+    position: absolute;
+    z-index: -1;
+}
+.door {
+    width: 300px;
+    height: 300px;
+    background-color: #97570f;
+    border: 5px solid black;
+}
+.left {
+    transform-origin: left;
+}
+.right {
+    transform-origin: right;
+}
+.doors:hover .left {
+    transform: rotateY(50deg);
+    transition: transform 2s;
+} 
+.doors:hover .right {
+    transform: rotateY(-50deg);
+    transition: transform 2s;
+}
