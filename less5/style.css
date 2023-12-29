@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+img {
+    width: 100%;
+}
+body {
+    background: rgb(217 205 205);
+}
+.chat {
+    height: 200px;
+    width: 1180px;
+    margin: 0 auto;
+}
+.container__anna {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "anna anna__text .";
+}
+.container__jack {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". jack__text jack";
+}
+.anna .chat__info {
+    justify-content: flex-end;
+}
+.jack .chat__info {
+    justify-content: flex-start;
+}
+
+.chat__info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.chat__foto {
+    width: 20%;
+}
+
+.anna {
+    grid-area: anna;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-right: 20px;
+}
+.jack {
+    grid-area: jack;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.anna__text {
+    grid-area: anna__text;
+    border: 1px solid #b98f8f;
+    background: #b98f8f;
+    border-radius: 5px;
+}
+.jack__text {
+    grid-area: jack__text;
+    border: 1px solid #6d84a5;
+    background: #6d84a5;
+    border-radius: 5px;
+}
