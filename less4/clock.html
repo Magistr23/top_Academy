@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Часы</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      --speed: 100;
+    }
+
+    .round {
+      /* position: relative; */
+      box-sizing: border-box;
+      width: calc(100vmin - 10px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 5px solid #008b8b;
+    }
+
+    .hand {
+      /* --size : 1px; */
+      position: absolute;
+      background-color: black;
+      width: calc( 2 * var(--size));
+      top: 50%;
+      left: calc(50% - var(--size));
+      transform-origin: top center;
+    }
+
+    .hour {
+      --size : 2px;      
+      height: 25vmin;
+      animation: anim calc(43200s / var(--speed)) linear infinite;
+    }
+
+    .minute {
+      --size : 1px;
+      height: 35vmin;
+      animation: anim calc(3600s / var(--speed)) linear infinite;
+    }
+
+    .second {
+      --size : .5px;
+      height: 40vmin;
+      animation: anim calc(60s / var(--speed)) steps(60) infinite;
+      background-color: red;
+    }
+
+    @keyframes anim {
+      from {
+        transform: rotate(-180deg);
+      }
+
+      to {
+        transform: rotate(180deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="round">
+    <div class="hour hand"></div>
+    <div class="minute hand"></div>
+    <div class="second hand"></div>
+  </div>
+</body>
+
+</html>

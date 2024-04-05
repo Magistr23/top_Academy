@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/css/style.css">
+    <link rel="stylesheet" href="app/css/mobil.css">
+    <title>House</title>
+</head>
+<body>
+    <header>
+        <section class="header">
+            <div class="container container-flex">
+                <div class="logo flex-center">
+                    <img src="app/img/Star.png" alt="">
+                    <a href="/">Ink. House</a>
+                </div>
+                <div class="mob-btn">
+                    <img src="app/img/mob-menu.png" alt="" onclick="mobMenu()">
+                  </div>
+                  <div class="mob-menu">
+                    <ul>
+                        <li><a href="#">Репродукции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">О нас</a></li>
+                    </ul>
+                  </div>
+                <nav class="header__link flex-center">
+                    <ul class="container-flex">
+                        <li><a href="#">Репродукции</a></li>
+                        <li><a href="#">Новинки</a></li>
+                        <li><a href="#">О нас</a></li>
+                        <a href="#"><img src="app/img/basket.png" alt=""></a>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="replicas">
+            <div class="container container-flex">
+                <div class="replicas__foto">
+                    <img src="app/img/banner.jpg" alt="">
+                </div>
+                <div class="replicas__description flex-center">
+                    <div class="replicas__title">
+                        <h1>Реплики картин от <span>Ink. House</span></h1>
+                        <p>Высокое качество отрисовки на плотной бумаге или льняном холсте. Редкие произведения, доступные цены.</p>
+                        <div class="button">
+                            <a href="#" class="btn">Продукция</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reproductions">
+            <div class="container">
+                <div class="reproductions__title container-flex">
+                    <p>Репродукции</p>
+                    <div id="myBtnContainer" class="reproductions__filter flex-center">
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('franc')">Франция</button>
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('germ')">Германия</button>
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('angl')">Англия</button>
+                        <button type="button" class="reproductions__btn" onclick="filterSelection('all')">Все</button>
+                    </div>
+                </div>
+                <div class="reproductions__items container-flex">
+                    <div class="reproductions__item franc">
+                        <figure>
+                            <p class="reproductions__foto"><img src="app/img/Amyr.jpg" alt="" /></p>
+                            <figcaption>
+                                <div class="reproductions__description franc">
+                                    <p class="autor">Марсель Руссо</p>
+                                    <h2 class="name">Охота Амура</h2>
+                                    <p class="specifications">Холст, масло (50х80)</p>
+                                    <p class="price">14 500 руб</p>
+                                </div>
+                                    <button class="reproductions__button">В корзину</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="reproductions__item franc">
+                        <figure>
+                            <p class="reproductions__foto"><img src="app/img/Homes.jpg" alt="" /></p>
+                            <figcaption>
+                                <div class="reproductions__description">
+                                    <p class="autor">Марсель Руссо</p>
+                                    <h2 class="name">Охота Амура</h2>
+                                    <p class="specifications">Холст, масло (50х80)</p>
+                                    <p class="price">14 500 руб</p>
+                                </div>
+                                    <button class="reproductions__button">В корзину</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="reproductions__item germ">
+                        <figure>
+                            <p class="reproductions__foto"><img src="app/img/procedyra.jpg" alt="" /></p>
+                            <figcaption>
+                                <div class="reproductions__description">
+                                    <p class="autor">Марсель Руссо</p>
+                                    <h2 class="name">Охота Амура</h2>
+                                    <p class="specifications">Холст, масло (50х80)</p>
+                                    <p class="price">14 500 руб</p>
+                                </div>
+                                    <button class="reproductions__button">В корзину</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="reproductions__item germ">
+                        <figure>
+                            <p class="reproductions__foto"><img src="app/img/rosa.jpg" alt="" /></p>
+                            <figcaption>
+                                <div class="reproductions__description">
+                                    <p class="autor">Луи Детуш</p>
+                                    <h2 class="name">Роза</h2>
+                                    <p class="specifications">Бумага, акрил (50х80) </p>
+                                    <p class="price">12 000 руб</p>
+                                </div>
+                                    <button class="reproductions__button">В корзину</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="reproductions__item angl">
+                        <figure>
+                            <p class="reproductions__foto"><img src="app/img/bird.jpg" alt="" /></p>
+                            <figcaption>
+                                <div class="reproductions__description">
+                                    <p class="autor">Франсуа Дюпон</p>
+                                    <h2 class="name">Птичья трапеза</h2>
+                                    <p class="specifications">Цветная литография (40х60) </p>
+                                    <p class="price">22 500 руб</p>
+                                </div>
+                                    <button class="reproductions__button">В корзину</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="reproductions__item angl">
+                        <figure>
+                            <p class="reproductions__foto"><img src="app/img/fish.jpg" alt="" /></p>
+                            <figcaption>
+                                <div class="reproductions__description">
+                                    <p class="autor">Пьер Моранж</p>
+                                    <h2 class="name">Пейзаж с рыбой</h2>
+                                    <p class="specifications">Цветная литография (40х60) </p>
+                                    <p class="price">20 000 руб</p>
+                                </div>
+                                    <button class="reproductions__button">В корзину</button>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection">
+            <div class="container">
+                <div class="collection__description">
+                    <div class="collection__title flex-center">
+                        <div class="collection__foto">
+                            <img src="app/img/Star 2.png" alt="">
+                        </div>
+                        <p>Новая коллекция французских авторов</p>
+                    </div>
+                    <div class="collection__history">
+                        Сложно сказать, почему акционеры крупнейших компаний призывают нас к новым свершениям, которые, в свою очередь, должны быть заблокированы в рамках своих собственных рациональных ограничений. 
+Принимая во внимание показатели успешности, граница обучения кадров предопределяет высокую востребованность направлений прогрессивного развития.
+                    </div>
+                    <div class="collection__link">
+                        <a href="#" class="collection__btn">Ознакомиться</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="staff">
+            <div class="container">
+                <div class="flex-center">
+                    <div class="staff__picture">
+                        <div class="staff__frame">
+                            <img src="app/img/arm.png" alt="">
+                        </div>
+                    </div>
+                    <div class="staff__description">
+                        <h2>Наша команда</h2>
+                        <p>Значимость этих проблем настолько очевидна, что базовый вектор развития позволяет оценить значение экспериментов, поражающих по своей масштабности и грандиозности. Мы вынуждены отталкиваться от того, что консультация с широким активом.</p>
+                        <div class="staff__human">
+                            <img src="app/img/human1.png" alt="">
+                            <img src="app/img/human2.png" alt="">
+                            <img src="app/img/human3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="container container-flex">
+                <div class="footer__info">
+                    <div class="flex-center">
+                        <img src="app/img/Star.png" alt="">
+                        <a href="/">Ink. House</a>
+                    </div>
+                    <div class="footer__tel">
+                        <a href="tel:+7 (999) 543-54-54">+7 (999) 543-54-54</a>
+                        <p>Мастерская</p>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__menu">
+                        <ul>Репродукции
+                            <li><a href="#">Франция</a></li>
+                            <li><a href="#">Германия</a></li>
+                            <li><a href="#">Англия</a></li>
+                        </ul>
+                        <ul>Новинки
+                            <li><a href="#">2021</a></li>
+                            <li><a href="#">2020</a></li>
+                        </ul>
+                        <ul>О нас
+                            <li><a href="#">Художники</a></li>
+                            <li><a href="#">Менеджеры</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__link">
+                        <div class="footer__ico">
+                            <img src="app/img/ico-facebook.png" alt="">
+                            <img src="app/img/ico-inst.png" alt="">
+                            <img src="app/img/ico-youtube.png" alt="">
+                        </div>
+                        <div class="footer__copy">
+                            <p>Ink. House ®</p>
+                            <p>All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="app/js/mobile.js" type="text/javascript"></script>
+</body>
+</html>

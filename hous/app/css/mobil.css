@@ -1,0 +1,115 @@
+@media only screen and (max-width: 1024px) {
+    .container {
+        width: 94%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .flex-center {
+        flex-wrap: wrap;
+    }
+    .reproductions__button {
+        padding: 10% 10%;
+    }
+    .reproductions__item {
+        width: 48%;
+    }
+    .collection__description {
+        width: 100%;
+    }
+    .collection {
+        background-size: 100% 100%;
+    }
+    .reproductions__title {
+        margin-top: 30px;
+    }
+    .footer__menu {
+        width: 50%;
+    }
+    .footer .container {
+        flex-wrap: wrap;
+    }
+    .footer__info {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .footer__tel {
+        margin-top: 0;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .mob-btn {
+        display: block;
+    }
+    .header .logo {
+        display: none;
+    }
+    .staff__frame img {
+        bottom: 83px;
+        left: 44px;
+        width: 49%;
+    }
+    .staff__frame {
+        background-size: 97% 90%;
+        width: 412px;
+    }
+    .replicas__foto img {
+        display: none;
+    }
+    .replicas__description h1 {
+        font-size: 47px;
+    }
+    .replicas__description h1 span {
+        font-size: 45px;
+    }
+    .header__link li {
+        display: none;
+    }
+    .reproductions__title {
+        flex-wrap: wrap;
+    }
+    .reproductions__btn {
+        border-radius: 20px;
+        background: #D4E8D9;
+        padding: 10px 20px;
+        color: black;
+        border: none;
+        margin-bottom: 5px;
+    }
+    
+}
+@media only screen and (max-width: 375px) {
+    .reproductions__item {
+        width: 100%;
+    }
+    .staff__frame {
+        width: 363px;
+        background-size: 94% 90%;
+    }
+    .staff__frame img {
+        left: 39px;
+    }
+    .footer__menu {
+        width: 100%;
+    }
+    .footer__bottom {
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .staff__frame {
+        width: 310px;
+        background-size: 94% 69%;
+    }
+    .staff__frame img {
+        left: 33px;
+        bottom: 157px;
+    }
+    .collection {
+        background-size: cover;
+    }
+    .reproductions__filter input{
+        margin-bottom: 10px;
+    }
+}

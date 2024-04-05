@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Экскурсии в Краснодаре</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="vendors/slick/slick.css">
+  <link rel="stylesheet" href="vendors/slick/slick-theme.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobil.css">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet"> -->
+
+<script>
+
+  function calc(tour,count,day,sel,price,gift) {
+    // purseInt(строка) - строка в число
+    var ptour = tour.value;
+    var pCount = count.value;
+    var pDay = day.value;
+    var pPrice = 0;
+    if (ptour == 'turkey') {
+
+      pPrice=3000*pCount*pDay
+
+    } else if (ptour == 'italy') {
+
+      pPrice=5000*pCount*pDay
+
+    } else if (ptour == 'spain') {
+
+      pPrice=4000*pCount*pDay
+
+    } else if (ptour == 'Maita') {
+
+      pPrice=7000*pCount*pDay
+
+    }
+    if(sel.checked == true) {
+    pPrice=pPrice-pPrice/10;
+    }
+    if(pPrice>=200000) {
+    gift.value="Водопад";
+    }
+    // pPrice=3000*pCount*pDay;
+    // price.value ="Привет";
+    price.value =pPrice.toString();//преобразовать в строку
+  }
+</script>
+</head>
+<body>
+  <header>
+    <div class="mob-btn">
+      <img src="img/mob-menu.png" alt="">
+    </div>
+    <div class="mob-menu">
+      <ul>
+        <li><img src="img/Group.png" alt=""><a href="/index.html">Главная</a></li>
+        <li><img src="img/Group.png" alt=""><a href="/test.html">Про гида</a></li>
+        <li><img src="img/Group.png" alt=""><a href="#">Программа тура</a></li>
+        <li><img src="img/Group.png" alt=""><a href="#">Стоимость</a></li>
+        <li><img src="img/Group.png" alt=""><a href="#">Блог</a></li>
+        <li><img src="img/Group.png" alt=""><a href="#">Контакты</a></li>
+      </ul>
+    </div>
+    <div class="header-fon">
+      <div class="header">
+        <div class="header-top">
+          <div class="header-logo">
+            <a href="vendors/test.html">
+              <img src="img/logo.png">
+            </a>
+          </div>
+          <div class="header-menu">
+            <ul>
+              <li><a href="/index.html">Главная</a></li>
+              <li><a href="/test.html">Про гида</a></li>
+              <li><a href="#">Программа тура</a></li>
+              <li><a href="#">Стоимость</a></li>
+              <li><a href="#">Блог</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="header-btn">
+            <a href="#">Консультация</a>
+          </div>
+        </div>
+        <div class="header-offer">
+          <h1>Насладись прогулкой в горах
+            с командой единомышленников</h1>
+        </div>
+        <div class="header-form">
+          <form action="forms/order.php" method="post">
+            <input type="text" name="tour" placeholder="Локация для тура">
+            <input type="text" name="tel" placeholder="Номер телефона">
+            <input type="text" name="count" placeholder="Участники">
+            <button type="submit">Найти программу</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about">
+      <div class="container container-fix container-fix-wrap">
+        <div class="about-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5wYRNMk6Cxo?si=G9Gz6SvYOY2qqlD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="about-info">
+          <h3>о нашем походе</h3>
+          <h2>Исследуйте все горные массивы мира вместе с нами</h2>
+          <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur"и занялся его поисками в классической латинской литературе.</p>
+          <div class="about-btn">
+            <a href="#">Программа тура</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ofer-fon">
+      <div class="ofer">
+          <div class="ofer-info">
+              <div class="ofer-info-top">
+                  <h3>Наше предложение</h3>
+                  <h2>Лучшие программы для тебя</h2>
+                  <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа.</p>
+              </div>
+              <div class="ofer-info-items">
+                  <div class="ofer-item">
+                      <div class="ofer-item-foto">
+                          <img src="img/гит.png" alt="">
+                      </div>
+                      <div class="ofer-item-info">
+                          <h4>Опытный гид</h4>
+                          <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                      </div>
+                  </div>
+                  <div class="ofer-item">
+                      <div class="ofer-item-foto">
+                          <img src="img/поход.png" alt="">
+                      </div>
+                      <div class="ofer-item-info">
+                          <h4>Безопасный поход</h4>
+                          <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                      </div>
+                  </div>
+                  <div class="ofer-item">
+                      <div class="ofer-item-foto">
+                          <img src="img/цены.png" alt="">
+                      </div>
+                      <div class="ofer-item-info">
+                          <h4>Лояльные цены</h4>
+                          <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="ofer-info-btn">
+                      <a href="#">Стоимость программ</a>
+               </div>
+          </div>
+          <div class="ofer-img">
+              <img src="img/program1.png" alt="">
+              <img src="img/program2.png" alt="">
+              <img src="img/program3.png" alt="">
+              <img src="img/program4.png" alt="">
+          </div>
+      </div>
+  </section>
+  <section class="directions">
+    <div class="directions__info">
+      <h2>Популярные направления</h2>
+      <h3>Проводим индивидуальные и групповые экскурсии на русском языке</h3>
+      <div class="directions__item">
+        <div class="directions__items directions1">
+          <div class="directions__excursions">
+            <p>Экскурсии в Санкт-Петербурге</p>
+            <a href="#">15 экскурсий</a>
+          </div>
+        </div>
+        <div class="directions__items directions2">
+          <div class="directions__excursions">
+            <p>Экскурсии в Стамбуле</p>
+            <a href="#">15 экскурсий</a>
+          </div>
+        </div>
+        <div class="directions__items directions3">
+          <div class="directions__excursions">
+            <p>Экскурсии в Дубае</p>
+            <a href="#">15 экскурсий</a>
+          </div>
+        </div>
+        <div class="directions__items directions4">
+          <div class="directions__excursions">
+            <p>Экскурсии в Калининграде</p>
+            <a href="#">15 экскурсий</a>
+          </div>
+        </div>
+        <div class="directions__items directions5">
+          <div class="directions__excursions">
+            <p>Экскурсии в Мурманске</p>
+            <a href="#">15 экскурсий</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <section class="popular">
+      <div class="popular__title">
+        <p>по версии отдыхающих</p>
+        <h2>Популярные направления</h2>
+      </div>
+      <div class="popular__items">
+        <div class="popular__item popular-foto1">
+          <div class="popular__info">
+            <div class="popular__info-title">
+              <h3 class="popular__info-head">Озеро возле гор</h3>
+              <p class="popular__info-txt">романтическое приключение</p>
+            </div>
+            <div class="popular__info-price">
+              <p>480 $</p>
+            </div>
+          </div>
+          <div class="popular__rating">
+            <p>
+              <img src="img/ico-star.png" alt="">
+              <span>4.9</span>
+            </p>
+          </div>
+        </div>
+        <div class="popular__item popular-foto2">
+          <div class="popular__info">
+            <div class="popular__info-title">
+              <h3 class="popular__info-head">Озеро возле гор</h3>
+              <p class="popular__info-txt">романтическое приключение</p>
+            </div>
+            <div class="popular__info-price">
+              <p>480 $</p>
+            </div>
+          </div>
+          <div class="popular__rating">
+            <p>
+              <img src="img/ico-star.png" alt="">
+              <span>4.9</span>
+            </p>
+          </div>
+        </div>
+        <div class="popular__item popular-foto3">
+          <div class="popular__info">
+            <div class="popular__info-title">
+              <h3 class="popular__info-head">Озеро возле гор</h3>
+              <p class="popular__info-txt">романтическое приключение</p>
+            </div>
+            <div class="popular__info-price">
+              <p>480 $</p>
+            </div>
+          </div>
+          <div class="popular__rating">
+            <p>
+              <img src="img/ico-star.png" alt="">
+              <span>4.9</span>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="popular__btn">
+        
+      </div>
+    </section>
+    <section class="vlog">
+      <h2>Блог</h2>
+      <div class="vlog__title">
+        <p class="vlog__info">платформа простого и надежного онлайн бронирования экскурсий на русском языке по всему миру. Был
+          основан в 2012 году в Санкт-Петербурге.</p>
+          <div class="vlog__sort">
+              <label for="sort">Сортировать</label>
+              <select name="sort" id="sort">
+                <option value="value1">По умолчанию</option>
+                <option value="value2">value2</option>
+                <option value="value3">value3</option>
+              </select>
+          </div>
+      </div>
+      <div class="vlog__items">
+        <div class="vlog__item">
+          <img src="img/avto.png" alt="Путешествия">
+          <div class="vlog__date"><img src="img/date.png"><p>Сегодня 15:25</p></div>
+          <p class="vlog__description">
+            Программа автобусной экскурсии из Петербурга в Выборг
+          </p>
+          <div class="vlog__btn">
+            <a href="#">Читать</a>
+          </div>
+        </div>
+        <div class="vlog__item">
+          <img src="img/Rim.png" alt="Путешествия к риму">
+          <div class="vlog__date"><img src="img/date.png"><p>Сегодня 15:25</p></div>
+          <p class="vlog__description">
+            10 лучших экскурсий в городе античной культуры Риме
+          </p>
+          <div class="vlog__btn">
+            <a href="#">Читать</a>
+          </div>
+        </div>
+        <div class="vlog__item">
+          <img src="img/siti.png" alt="Путешествия в город">
+          <div class="vlog__date"><img src="img/date.png"><p>Сегодня 15:25</p></div>
+          <p class="vlog__description">
+            10 главных вещей, которые нужно успеть сделать в Будапеште
+          </p>
+          <div class="vlog__btn">
+            <a href="#">Читать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fon_blog">
+      <div class="blog">
+        <div class="blog-title">
+          <p>делимся впечатлениями</p>
+          <h2>Блог о путешествиях</h2>
+        </div>
+        <div class="blog-posts">
+          <div class="blog-items">
+            <div class="blog-item">
+              <div class="blog-item-foto">
+                <img src="img/blog_posts.png">
+              </div>
+              <div class="blog-item-info">
+                <div>
+                <h3>Красивая Италя, какая она в реальности?</h3>
+                <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации.</p>
+              </div>
+                <div class="button_info">
+                  <div class="date">01/04/2023</div>
+                  <div class="read">
+                    <a href="#">читать статью</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-foto">
+                <img src="img/blog_posts2.png">
+              </div>
+              <div class="blog-item-info">
+                <div>
+                <h3>Долой сомнения! Весь мир открыт для вас!</h3>
+                <p>Для современного мира базовый вектор развития предполагает независимые способы реализации соответствующих условий активизации ... независимые способы реализации соответствующих условий активизации ...</p>
+              </div>
+                <div class="button_info">
+                  <div class="date">01/04/2023</div>
+                  <div class="read">
+                    <a href="#">читать статью</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-foto">
+                <img src="img/blog_posts3.png">
+              </div>
+              <div class="blog-item-info">
+                <div>
+                <h3>Как подготовиться к путешествию в одиночку? </h3>
+                <p>Для современного мира базовый вектор развития предполагает.</p>
+              </div>
+                <div class="button_info">
+                  <div class="date">01/04/2023</div>
+                  <div class="read">
+                    <a href="#">читать статью</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-item">
+              <div class="blog-item-foto">
+                <img src="img/blog_posts4.png">
+              </div>
+              <div class="blog-item-info">
+                <div>
+                <h3>Индия ... летим? </h3>
+                <p>Для современного мира базовый.</p>
+              </div>
+                <div class="button_info">
+                  <div class="date">01/04/2023</div>
+                  <div class="read">
+                    <a href="#">читать статью</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="blog-btn">
+            <a href="#">Другие материалы</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gallary">
+      <div class="gallary__title">
+        <p>фото-отчет</p>
+        <h2>Делимся впечатлениями</h2>
+      </div> 
+      <div class="gallary__items">
+        <img src="img/Rectangle 20.jpg" alt="">
+        <img src="img/Rectangle 21.jpg" alt="" name="gal2" onmouseout="gal2.src='img/Rectangle 21.jpg'"
+        onmouseover="gal2.src='img/Rectangle 25.jpg'">
+        <img src="img/Rectangle 22.jpg" alt="">
+        <img src="img/Rectangle 23.jpg" alt="">
+        <img src="img/Rectangle 24.jpg" alt="">
+        <img src="img/Rectangle 25.jpg" alt="">
+    </div> 
+    <div class="gallary__btn">
+      <a href="#">Наш pinterest</a>
+    </div>
+  </section>
+  <section class="foto">
+    <div class="foto__items">
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+      <div class="foto__item">
+        <img src="img/foto.jpg" alt="">
+      </div>
+    </div>
+  </section>
+    <section class="bottom">
+      <div class="bottom-items">
+        <div class="bottom-item-info">
+          <div class="bottom-title">
+            <h3>актуально</h3>
+            <p>Получайте полезные рассылки о путешествиях</p>
+          </div>
+        </div>
+        <div class="bottom-item-form">
+          <div class="form-title">
+            <form action="#" method="post">
+              <label for="e-mail">Введите e-mail адрес</label>
+              <div class="form-input">
+                <input type="email" name="email" id="e-mail" placeholder="name@domain.com">
+                <button>Подписаться на новости</button>
+              </div>
+              <p>подписываясь на новости, вы автоматически соглашаетесь c <a href="#">условиями обработки персональных данных </a> и <a href="#"> правилами рекламных рассылок</a></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="price-trip">
+      <div class="price-trip-title">
+        <h2>Стоимость наших путешествий</h2>
+      </div>
+      <div class="price-trip-table">
+        <table>
+          <!-- <tr class="table-fon">
+            <td>Наименование</td>
+            <td>Продолжительность</td>
+            <td>Цены</td>
+            <td>Условия</td>
+          </tr> -->
+          <tr>
+            <th>Наименование</th>
+            <th>Продолжительность</th>
+            <th>Цены</th>
+            <th>Условия</th>
+          </tr>
+          <tr>
+            <td>Лаго-Наки</td>
+            <td>7 дней</td>
+            <td>38.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+          <tr>
+            <td>Гуамское ущелье</td>
+            <td>12 дней</td>
+            <td>62.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+          <tr>
+            <td>Лаго-Наки</td>
+            <td>7 дней</td>
+            <td>38.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+          <tr>
+            <td>Гуамское ущелье</td>
+            <td>12 дней</td>
+            <td>62.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+          <tr>
+            <td>Лаго-Наки</td>
+            <td>7 дней</td>
+            <td>38.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+          <tr>
+            <td>Гуамское ущелье</td>
+            <td>12 дней</td>
+            <td>62.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+          <tr>
+            <td>Лаго-Наки</td>
+            <td>7 дней</td>
+            <td>38.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+          <tr>
+            <td>Гуамское ущелье</td>
+            <td>12 дней</td>
+            <td>62.000 руб</td>
+            <td>Для современного мира базовый вектор развития предполагает.</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <section class="calculations">
+      <!-- <form action="calculations.php"> -->
+        <form action="#" name="formatour">
+        Выбирите страну : <select name="tour" id="" onchange="calc(tour,count,day,sel,price,gift)">
+          <option value="sel">Выбрать</option>
+          <option value="turkey">Турция</option>
+          <option value="italy">Италия</option>
+          <option value="spain">Испания</option>
+          <option value="Maita">Мальта</option>
+        </select>
+        Кол-во человек <input class="inp" type="number" name="count" value="1">
+        Кол-во дней <input class="inp" type="number" name="day" value="2">
+        Скидка (10%) <input type="checkbox" name="sel">
+        Подарок <input class="inp" type="text" name="gift" value="Нет">
+        К оплате <input class="inp" type="text" name="price">
+        <!-- <input type="submit" name="turs" value="Расчитать"> -->
+        <input type="button" value="Расчитать" onclick="calc(tour,count,day,sel,price,gift)">
+      </form>
+    </section>
+    <section class="game">
+      <div class="container">
+        <div class="game__title">
+          <h6>Игра в крестики - нолики</h6>
+          <div class="query">Очередь КРЕСТИКИ</div>
+        </div>
+        <div class="game__items container-fix">
+          <div class="game__item"><img src="img/zero.jpg" name="pict1" onclick="gamer(pict1)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict2" onclick="gamer(pict2)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict3" onclick="gamer(pict3)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict4" onclick="gamer(pict4)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict5" onclick="gamer(pict5)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict6" onclick="gamer(pict6)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict7" onclick="gamer(pict7)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict8" onclick="gamer(pict8)"></div>
+          <div class="game__item"><img src="img/zero.jpg" name="pict9" onclick="gamer(pict9)"></div>
+        </div>
+        <div class="game__btn">
+          <!-- <a href="#" onclick="newGame()">Новая игра</a> -->
+          <input type="button" value="Новая игра" onclick="newGame()">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-wraper">
+      <div class="footer">
+        <div class="footer-info">
+          <h2>Компания «РумТибет»</h2>
+          <p>Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney.</p>
+          <div class="footer-tel-email">
+            <p><a href="mailto:Spanhbob98@mail.ru">info@domain.com</a></p>
+            <p><a href="tel:+79203000511">+7 (123) 456-78-90</a></p>
+          </div>
+          <div class="footer-cos">
+            <a href="#"><img src="img/footer1.png"></a>
+            <a href="#"><img src="img/footer2.png"></a>
+            <a href="#"><img src="img/footer3.png"></a>
+            <a href="#"><img src="img/footer4.png"></a>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu-item">
+            <h2>Наши услуги</h2>
+            <ul>
+              <li><img src="img/Group.png"><a href="#">Прогулки в горы летом</a></li>
+              <li><img src="img/Group.png"><a href="#">Зимние походы в горы</a></li>
+              <li><img src="img/Group.png"><a href="#">Посещение храмов в горах</a></li>
+              <li><img src="img/Group.png"><a href="#">Экстремальные виды туризма</a></li>
+              <li><img src="img/Group.png"><a href="#">Походы в джунглях Амазонии
+                NEW</a></li>
+              <li><img src="img/Group.png"><a href="#">Поездка в Африку</a></li>
+            </ul>
+          </div>
+          <div class="footer-menu-item">
+            <h2>Важно для путешествий</h2>
+            <ul>
+              <li><img src="img/Group.png"><a href="#">Прогулки в горы летом</a></li>
+              <li><img src="img/Group.png"><a href="#">Зимние походы в горы</a></li>
+              <li><img src="img/Group.png"><a href="#">Посещение храмов в горах</a></li>
+              <li><img src="img/Group.png"><a href="#">Экстремальные виды туризма</a></li>
+              <li><img src="img/Group.png"><a href="#">Походы в джунглях Амазонии NEW</a></li>
+              <li><img src="img/Group.png"><a href="#">Поездка в Африку</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="politics-wrapper">
+        <div class="politics-line">
+          <div class="politics-line-left">
+            ИП Константинопольский К.К., 2023
+        </div>
+        <div class="politics-line-right">
+            <a href="#">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </section>
+  </footer>
+  <section class="soc-fix">
+    <img src="img/ico skype.png" alt="">
+    <img src="img/ico tel.png" alt="">
+    <img src="img/ico vk.png" alt="">
+  </section>
+  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="vendors/slick/slick.min.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>
+
+<!--  Карусель с помощью slick
+    1 https://kenwheeler.github.io/slick/
+    2 скачать Download Now и папку slick  скопировать в vendors
+ 
+3 Подключить CSS  в хеде до наших CSS!!!
+<link rel="stylesheet" href="vendors/slick/slick.css">
+<link rel="stylesheet" href="vendors/slick/slick-theme.css">
+ 
+4 Подключить js
+<script src="vendors/slick/slick.min.js"></script>
+и свой js
+5 https://code.jquery.com  отсюда путь подклчения jquery
+берем minified (сжатый код без пробела или любой)
+ 
+Перед закрывающим </body>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+ 
+  <script src="vendors/slick/slick.min.js"></script>
+ 
+перед сликом и своим (всегда jquery  первый)
+ 
+6 В папке JS создаем файл main.js  со следующим содержимым
+(function($){
+  
+  
+  
+  
+})(jQuery);
+ 
+и подключаем в HTML
+<script src="js/main.js"></script>

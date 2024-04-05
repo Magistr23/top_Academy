@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.banket {
+    width: 1180px;
+    margin: 0 auto;
+}
+.banket__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.banket__item {
+    display: flex;
+    width: 40%;
+    margin-top: 35px;
+}
+.banket__foto {
+    margin-right: 20px;
+}
+
+.foto {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.salat {
+    background-image: url(../img/salat.jpg);
+}
+.pancakes {
+    background-image: url(../img/pancakes.jpg);
+}
+.pirog {
+    background-image: url(../img/pirog.jpg);
+}
+.popsicle {
+    background-image: url(../img/popsicle.jpg);
+}
+.quantity {
+    text-align: center;
+}
+.quantity label, .calculation label {
+    display: block;
+}
+.price__input {
+    text-align: right;
+}
+.price__input input.rec {
+    width: 20%;
+    text-align: center;
+}
+.form {
+    margin-top: 30px;
+    display: flex;
+}
+.form input, .form button{
+    margin-right: 20px;
+}
+.btn {
+    background: #2eafd7;
+    border-radius: 10px;
+    padding: 0 30px;
+    cursor: pointer;
+}

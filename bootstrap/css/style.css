@@ -1,0 +1,31 @@
+.link {
+    margin: 60px 0;
+}
+.about {
+    margin: 60px 0;
+}
+.about .col-6 {
+    position: relative;
+}
+.about-video1 {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+}
+.about-video2 {
+    position: absolute;
+    z-index: 200;
+    left: 130px;
+    top: 26px;
+}
+.catalog {
+    margin-top: 180px;
+    margin-bottom: 80px;
+}
+.catalog .card {
+    margin-bottom: 20px;
+}
+.faq {
+    margin: 60px 0;
+}

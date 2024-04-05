@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Решение</title>
+  <style>
+    div {
+      border: 1px solid blue;
+      margin: 5px;
+      padding: 5px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    'use strict';
+    const
+      label = '1',
+      rootDiv = createDivWithIdAndContentThenAppendIt(label); // корневой DIV (у него только id)
+    for (let childN = 1; childN <= 3; childN++) {
+      const 
+        childDiv = createDivWithIdAndContentThenAppendIt(label + childN, rootDiv); // потомок корневого DIV (id и родитель)
+      for (let grandN = 1; grandN <= childN; grandN++) {
+        const 
+          id = label + childN + grandN;
+        createDivWithIdAndContentThenAppendIt(id, childDiv, id); // "внук" корневого DIV (id, родитель и контент)
+      }
+    }
+    document.body.prepend(rootDiv); // теперь всю конструкцию добавим в DOM, так перерисовка будет только один раз
+
+    // 2) а затем скрипт получит из document элемент с id=d132 и выделит его красным.
+    const 
+      forPainting = document.getElementById('d132');
+    forPainting.style.backgroundColor = 'red';
+
+    // вспомогательная функция создает DIV c id и textContent затем добавляет его в другой элемент
+    function createDivWithIdAndContentThenAppendIt(id, parent, content) {
+      const
+        div = document.createElement('div');
+      div.id = 'd' + id;
+      if (content) 
+        div.textContent = content;
+      if (parent) 
+        parent.append(div);
+      return div;
+    }
+  </script>
+</body>
+</html>
